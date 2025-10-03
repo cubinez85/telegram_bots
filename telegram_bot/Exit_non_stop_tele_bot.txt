@@ -1,0 +1,3 @@
+nohup python bot_service.py &
+
+after push Ctrl/D
