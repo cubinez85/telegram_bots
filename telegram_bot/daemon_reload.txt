@@ -1,0 +1,5 @@
+sudo systemctl daemon-reload
+sudo systemctl start telegram-bot
+sudo systemctl enable telegram-bot  # для автозапуска
+
+ps aux | grep bot_service.py # проверка работающих процессов
