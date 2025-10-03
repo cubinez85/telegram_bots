@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=cubinez85
+WorkingDirectory=/home/cubinez85/tegram_bot
+ExecStart=/home/cubinez85/tegram_bot/venv/bin/python /home/cubinez85/tegram_bot/bot_service.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
